@@ -1,5 +1,8 @@
 import sqlite3
 
+"""This script creates table and adds data with sqlite3 module"""
+
+
 conn = sqlite3.connect("people.db")
 columns = [
     "id INTEGER PRIMARY KEY",
