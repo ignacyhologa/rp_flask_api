@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rp-flask-api"
+version = "0.1.0"
+description = "Real Python Flask Learning Project"
+authors = ["ignacyhologa <ignac022@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rp_flask_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^2.2.2"
+connexion = {extras = ["swagger-ui"], version = "^2.14.1"}
+flask-marshmallow = {version = "^0.14.0", extras = ["sqlalchemy"]}
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.12.0"
+isort = "^5.11.4"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
